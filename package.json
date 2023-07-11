@@ -1,0 +1,48 @@
+{
+  "name": "rest-api-hexagonal-arch-tutorial",
+  "version": "1.0.0",
+  "description": "rest api tutorial with hexagonal architecture",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only --files src/app.ts",
+    "lint": "ts-standard --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.9.2",
+    "module-alias": "^2.2.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/helmet": "^4.0.0",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.4.1",
+    "dotenv": "^16.3.1",
+    "ts-node-dev": "^2.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "^5.1.6"
+  },
+  "_moduleAliases": {
+    "@auth": "src/auth",
+    "@core": "src/core"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
+  }
+}
