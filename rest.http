@@ -1,3 +1,9 @@
 ## test endpoint
-GET http://localhost:8900/test HTTP/1.1
+POST http://localhost:8900/auth HTTP/1.1
 Content-Type: application/json
+
+{
+    "email": "usuario1@test.com",
+    "password": "Lamisma123**",
+    "phoneNumber": "+502-9087878676"
+}
